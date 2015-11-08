@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="MusicStore">
+<head>
+    <meta charset="UTF-8">
+    <title>Music - Your musicstore</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- loading font: Roboto -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- loading styles: font-awesome & css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation and header -->
+<header>
+
+    <!-- Top nav bar -->
+    <div class="container container-white">
+
+        <!-- wrapper nav -->
+        <nav class="navbar">
+
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#account">My account</a></li>
+                <li><a href="#wishlist">My wishlist</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </div> <!-- end nav bar -->
+
+    <!-- Red header bar -->
+    <div class="container-fullwidth container-red">
+
+        <div class="container">
+
+            <!-- Title -->
+            <div class="container-one-third">
+                <span id="title"><b>MUSIC</b></span>
+            </div>
+
+            <!-- Search -->
+            <div class="container-one-third">
+                <div id="form-search">
+                    <input class="search-input" type="text" class="" placeholder="Search">
+                    <button class="search-button" type="submit" title="search"><i class="fa fa-search fa-2"></i></button>
+                </div>
+            </div>
+
+            <!--  Shopping cart -->
+            <div class="container-one-third">
+
+                <!-- welcome text -->
+                <div id="welcome-text">
+                    Welcome to our <br> online store!
+                </div>
+
+                <!-- shopping cart -->
+                <div id="cart-display">
+
+                    <!-- Shopping cart icon -->
+                    <div id="cart"><i class="fa fa-shopping-cart"></i></div>
+
+                    <div id="cart-items">
+                        0
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div> <!-- end red header bar -->
+
+</header>
+
+<!-- main -->
+<section id="main">
+
+    <!-- AngularJS templates - will be loaded here -->
+    <div ng-view></div>
+
+</section>
+
+<!-- loading angular files -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+<script src="assets/js/app.js"></script>
+
+<!-- loading external page controllers-->
+<script src="app/components/home/homeController.js"></script>
+<script src="app/components/account/accountController.js"></script>
+<script src="app/components/wishlist/wishlistController.js"></script>
+<script src="app/components/checkout/checkoutController.js"></script>
+<script src="app/components/login/loginController.js"></script>
+
+</body>
+</html>

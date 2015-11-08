@@ -106,6 +106,16 @@ header > .container {
     transition: 0.5s;
 }
 
+.loading {
+    position: absolute;
+    background: url(../img/loading.gif);
+    width: 16px;
+    heigth: 16px;
+    background-repeat:  no-repeat;
+    margin-top: 12px;
+    display: block;
+}
+
 #cart-display {
     float: right;
 }
